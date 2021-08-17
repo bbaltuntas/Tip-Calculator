@@ -1,0 +1,219 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+.main-heading {
+    position: relative;
+    left: 50%;
+    margin-top: 5%;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 0.4rem;
+
+}
+
+.main-cont {
+    width: 60%;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    border-radius: 1rem;
+    padding: 1.87rem;
+
+}
+
+label {
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 0.5rem;
+
+}
+
+.input-con {
+    background-color: hsl(0, 0%, 100%);
+
+
+}
+
+#amount {
+    background-image: url("/images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 8px;
+    margin-bottom: 1.5rem;
+
+}
+
+::placeholder {
+    color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    text-align: right;
+}
+
+.input {
+    color: hsl(183, 100%, 15%);
+    font-size: 1.2rem;
+    text-align: right;
+    background-color: hsl(189, 41%, 97%);
+    padding: 7px 10px;
+    display: inline-block;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.input:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+
+.tip {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 12px 12px 0;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+
+}
+
+.tip:hover {
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+}
+
+.custom-tip-div {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    height: auto;
+    padding: 0;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 12px 2rem 0;
+    color: hsl(0, 0%, 100%);
+
+
+}
+
+.custom-tip-div:hover {
+    background-color: hsl(189, 41%, 97%);
+}
+
+#custom-tip {
+    padding: 0;
+    height: auto;
+    background-color: transparent;
+}
+
+
+#custom-tip::placeholder {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+
+
+#number-p {
+    background-image: url("/images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 8px;
+
+}
+
+
+.result-con {
+
+    border-radius: 1rem;
+    background-color: hsl(183, 100%, 15%);
+    padding: 2rem;
+}
+
+.result-label {
+    width: 50%;
+    color: hsl(0, 0%, 100%);
+}
+
+span {
+    color: hsl(184, 14%, 56%);
+}
+
+.h1-amount {
+    /* position: absolute;
+     right: 5%;*/
+    display: inline-block;
+    margin-bottom: 10%;
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+}
+
+.btn-reset {
+    bottom: 10%;
+    right: 5%;
+    width: 100%;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    margin: 35% auto 5%;
+}
+
+.btn-reset:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.btn-calculate {
+
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    margin: 10% auto;
+    width: 90%;
+}
+
+.btn-calculate:hover {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 992px) {
+    .result-con {
+        margin-top: 5%;
+    }
+
+    .main-cont {
+        transform: translate(-50%, -20%);
+        width: 70%;
+    }
+}
+
+.error-border {
+    border: 2px solid red;
+}
+
+.selected-tip {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.error-text {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: red;
+    display: none;
+}

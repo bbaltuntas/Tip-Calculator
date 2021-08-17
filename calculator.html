@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> &lt;!&ndash; displays site properly based on user's device &ndash;&gt;
+    -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Tip Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<form class="needs-validation" novalidate>
+    <p class="main-heading">SPLI<br>TTER</p>
+
+
+    <div class="container main-cont">
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+            <div class="col input-con">
+                <label for="amount">Bill</label><br>
+                <input class="input" type="text" name="bill" id="amount" placeholder="0"><br>
+
+                <label for="amount">Select Tip %</label><br>
+                <div class="tip">5%</div>
+                <div class="tip">10%</div>
+                <div class="tip">15%</div>
+                <div class="tip">25%</div>
+                <div class="tip">50%</div>
+                <div class="custom-tip-div">
+                    <input class="input" type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+                </div>
+                <br>
+                <label for="number-p">Number of People</label><br>
+                <input class="input" type="text" name="numberPeople" id="number-p" placeholder="0">
+                <p class="error-text">Can't be zero</p>
+                <button class="btn btn-md btn-calculate" type="button">CALCULATE</button>
+            </div>
+            <div class="col result-con ">
+                <label class="result-label" for="tip-amount">Tip Amount <br><span>/ person</span></label>
+                <h1 class="h1-amount" id="tip-amount">$0.00</h1>
+
+                <label class="result-label" for="total">Total <br><span>/ person</span></label>
+                <h1 class="h1-amount" id="total">$0.00</h1>
+
+                <button type="button" class="btn-reset btn btn-md">RESET</button>
+            </div>
+
+        </div>
+    </div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
